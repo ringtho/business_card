@@ -3,97 +3,129 @@
 }
 
 body {
+    height: 100vh;
     margin: 0;
     font-family:'Inter', sans-serif;
     background-color: #161619;
 }
 
-.app--container {
-    width: 550px;
-    height: 868px;
-    background-color: #23252C;
-    border: 1px solid #F3BF99;
+/* typography */
+
+h1, p {
+    margin: 0;
 }
 
-.info--container {
-    margin: 44px 116px;
+/* links */
+
+button {
+    padding: 9px 13px;
+    border-radius: 6px;
+    width: 100%;
+    border: none;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+button:focus,
+button:hover {
+    background-color: #F3BF99;
+}
+
+/* controls */
+
+.app--container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+main,
+footer {
+    width: 100%;
+}
+
+main {
+    height: 90%;
 }
 
 .pic {
     height: 317px;
-    width: 317px;
     border-radius: 10px 10px 0 0;
-}
-
-.pic > img {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
+    background-image: url(./images/business.png);
+    background-position: 60% 20%;
 }
 
 .info {
-    height: 399px;
-    width: 317px;
     background-color: #1A1B21;
-    padding-top: 20px;
+    padding: 24px 34px;
 
-}
-
-.info > h1, .role, .email {
-    margin: 0;
 }
 
 .name {
     font-size: 25px;
-    font-weight: 700px;
+    font-weight: 700;
     color: #FFFFFF;
     text-align: center;
+    line-height: 30px;
 
 }
 
 .role {
-    font-size: 12.8px;
-    font-weight: 400px;
+    font-size: 13px;
+    font-weight: 400;
     color:#F3BF99;
     text-align: center;
-    margin-top: 3px;
-
-
+    margin-top: 7px;
+    line-height: 16px;
 }
 
 .email {
-    font-size: 10.24px;
+    font-size: 11px;
     font-weight: 400px;
     color:#F5F5F5;
     text-align: center;
     margin-top: 9px;
+    line-height: 16px;
+    line-height: 160%;
 
-}
-
-button {
-    margin: 16px 35px 0 35px;
-    width: 247px;
-    border-radius: 6px;
-    height: 34px;
 }
 
 .about {
     color: #DCDCDC;
-    margin: 32px 35px 24px 35px;
+    margin-top: 32px;
 }
 
 .about > h3 {
     font-weight: 700;
     font-size: 16px;
+    color: #F5F5F5;
 }
 
 .about > p {
-    font-size: 10.24px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #DCDCDC;
+    line-height: 16px;
+    line-height: 160%;
 }
 
-.footer {
-    height: 64px;
-    width: 317px;
+footer {
+    padding: 20px 48px;
+    height: 10%;
     background-color: #161619;
     border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* icons */
+
+.fa-envelope {
+    margin-right: 7px;
+}
+
+footer > i {
+    font-size: 40px;
+    color: #918E9B;
+    cursor: pointer;
 }

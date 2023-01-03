@@ -402,78 +402,18 @@ var _Footer = __webpack_require__(6);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _Info = __webpack_require__(17);
 
-function Info() {
-    return _react2.default.createElement(
-        "main",
-        null,
-        _react2.default.createElement(
-            "div",
-            { className: "info--container" },
-            _react2.default.createElement(
-                "div",
-                { className: "pic" },
-                _react2.default.createElement("img", { src: "./images/smith.jpeg" })
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "info" },
-                _react2.default.createElement(
-                    "h1",
-                    { className: "name" },
-                    "Smith Ringtho"
-                ),
-                _react2.default.createElement(
-                    "p",
-                    { className: "role" },
-                    "Frontend Developer"
-                ),
-                _react2.default.createElement(
-                    "p",
-                    { className: "email" },
-                    "sringtho.com"
-                ),
-                _react2.default.createElement(
-                    "button",
-                    null,
-                    "Email"
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "about" },
-                    _react2.default.createElement(
-                        "h3",
-                        null,
-                        "About"
-                    ),
-                    _react2.default.createElement(
-                        "p",
-                        null,
-                        "I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn."
-                    ),
-                    _react2.default.createElement(
-                        "h3",
-                        null,
-                        "Interests"
-                    ),
-                    _react2.default.createElement(
-                        "p",
-                        null,
-                        "Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic."
-                    )
-                )
-            ),
-            _react2.default.createElement(_Footer2.default, null)
-        )
-    );
-}
+var _Info2 = _interopRequireDefault(_Info);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
     return _react2.default.createElement(
         "div",
         { className: "app--container" },
-        _react2.default.createElement(Info, null)
+        _react2.default.createElement(_Info2.default, null),
+        _react2.default.createElement(_Footer2.default, null)
     );
 }
 
@@ -544,7 +484,15 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Footer() {
-    return _react2.default.createElement("div", { className: "footer" });
+    return _react2.default.createElement(
+        "footer",
+        { className: "footer" },
+        _react2.default.createElement("i", { className: "fa-brands fa-square-twitter" }),
+        _react2.default.createElement("i", { className: "fa-brands fa-square-facebook" }),
+        _react2.default.createElement("i", { className: "fa-brands fa-square-instagram" }),
+        _react2.default.createElement("i", { className: "fa-brands fa-linkedin" }),
+        _react2.default.createElement("i", { className: "fa-brands fa-square-github" })
+    );
 }
 
 /***/ }),
@@ -30581,6 +30529,82 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Info() {
+    return _react2.default.createElement(
+        "main",
+        null,
+        _react2.default.createElement("div", { className: "pic" }),
+        _react2.default.createElement(
+            "div",
+            { className: "info" },
+            _react2.default.createElement(
+                "h1",
+                { className: "name" },
+                "Smith Ringtho"
+            ),
+            _react2.default.createElement(
+                "p",
+                { className: "role" },
+                "Frontend Developer"
+            ),
+            _react2.default.createElement(
+                "p",
+                { className: "email" },
+                "sringtho.com"
+            ),
+            _react2.default.createElement(
+                "button",
+                null,
+                _react2.default.createElement("i", { className: "fa-solid fa-envelope" }),
+                "Email"
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "about" },
+                _react2.default.createElement(
+                    "h3",
+                    null,
+                    "About"
+                ),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn."
+                ),
+                _react2.default.createElement(
+                    "h3",
+                    null,
+                    "Interests"
+                ),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic."
+                )
+            )
+        )
+    );
+}
+
+exports.default = Info;
 
 /***/ })
 /******/ ]);
